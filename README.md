@@ -1,10 +1,10 @@
 # GalliumToggle
-Script en Bash que actúa como interruptor para activar/desactivar Gallium Hud siempre y cuando se emplee la variable `GALLIUM_HUD_TOGGLE_SIGNAL=10` al momento de lanzar las aplicaciones con Gallium Hud.
+Script en Bash que actúa como interruptor para mostrar/ocultar el HUD de Gallium Hud siempre y cuando se emplee la variable `GALLIUM_HUD_TOGGLE_SIGNAL=10` al momento de lanzar las aplicaciones.
 
 Las funciones que realiza **GalliumToggle** son las siguientes:
 
-- Activar/desactivar Gallium Hud en todas las aplicaciones en ejecución.
-- Activar/desactivar Gallium Hud en las aplicaciones deseadas.
+- Mostrar/ocultar Gallium Hud en todas las aplicaciones en ejecución.
+- Mostrar/ocultar Gallium Hud en las aplicaciones deseadas.
 
 ## DEPENDENCIAS
 - Bash
