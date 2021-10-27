@@ -1,9 +1,9 @@
 #!/bin/bash
 #==================================================================================
 #   +==========================================================================+  #
-#   |                         GalliumToggle v1.0.0                             |  #
+#   |                         GalliumToggle v1.0.1                             |  #
 #   +==========================================================================+  #
-#   | -Ultima actualizacion: 07/12/2020                                        |  #
+#   | -Ultima actualizacion: 17/10/2021                                        |  #
 #   +--------------------------------------------------------------------------+  #
 #   | -Copyright (C) 2020 NestorBase11 (nestor-ld93)                           |  #
 #   +--------------------------------------------------------------------------+  #
@@ -34,9 +34,9 @@ i=122
 Nf=0
 while [ $i -lt ${N-1} ]; do
     comando1="grep -i ${variable_toggle} /proc/${PID[i]}/environ"
-    salida_comando=$(${comando1})
+    salida_comando=$(${comando1} 2>&1)
     
-    if [[ $salida_comando == */proc/${PID[i]}/environ* ]]; then
+    if [[ $salida_comando == */proc/${PID[i]}/environ*matches ]]; then
         #comando2="ps -p ${PID[i]} -o comm="
         proceso=($(ps -p ${PID[i]} -o comm=))
         
